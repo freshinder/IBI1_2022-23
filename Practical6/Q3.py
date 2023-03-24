@@ -1,22 +1,19 @@
-# create a list containing the cost
+
+
+# create lists containing the name & cost of the olympic game
+# sort the both lists
+# output the sorted values for the cost
+# create a bar chart using sorted data
+# create title, y-axis label, format of the graph
+
 import matplotlib.pyplot as plt
-
-costs = [1,8,15,7,5,14,43,40]
-costs.sort()
-for i in costs: # repeat for all value in sorted costs
-    print(i)
-
-# plot a barchart using matplotlib
-# y axis label is 'Cost ($ billions)'
-# title is 'Olympic Costs'
-
-labels = ['Los Angeles 1984','Seoul 1988','Barcelona 1992','Atlanta 1996','Sydney 2000','Athens 2003','Beijing 2008','London 2012']
-cost = [1,8,15,7,5,14,43,40]
+costs = {'Los Angeles 1984':1, 'Seoul 1988':8, 'Barcelona 1992':15, 'Atlanta 1996':7, 'Sydney 2000':5, 'Athens 2003':14, 'Beijing 2008':43, 'London 2012':40}
+print(sorted(costs, key=costs.get))
+labels = sorted(costs, key=costs.get)
+CoO = sorted(costs.values())
 width = 0.5
-#fig, ax = plt.subplots()
-plt.figure(figsize=(12,4))  # size of the figure produced (x,y)
-plt.bar(labels,cost,width)
-plt.ylabel('Cost ($ billions)')  # name y axis
-plt.xticks(fontsize = 8, rotation = 25) # rotation by 25 degree & customize fontsize
-plt.title('Olympic Costs')   # name title
+plt.bar(labels, CoO, width)
+plt.xticks(fontsize=8, rotation=25)
+plt.ylabel('Cost($ billions)')
+plt.title('Olympic Costs')
 plt.show()

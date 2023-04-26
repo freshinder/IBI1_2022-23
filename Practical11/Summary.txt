@@ -1,0 +1,11 @@
+Summary
+The analysis of Human-Cat:
+	The edit distance: 119 
+	The identity: 85.24%
+The analysis of Mouse-Cat:
+	The edit distance: 147 
+	The identity: 81.76%
+The analysis of Human-Mouse:
+	The edit distance: 144 
+	The identity: 82.13%
+The identity of human and cat is the highest

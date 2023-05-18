@@ -11,6 +11,7 @@ costs = {'Los Angeles 1984':1, 'Seoul 1988':8, 'Barcelona 1992':15, 'Atlanta 199
 print(sorted(costs, key=costs.get))
 labels = sorted(costs, key=costs.get)
 CoO = sorted(costs.values())
+print(CoO)
 width = 0.5
 plt.bar(labels, CoO, width)
 plt.xticks(fontsize=8, rotation=25)

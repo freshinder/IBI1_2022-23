@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: Find the maximum value from the 10 randomly generated number
+# Answer: Find and output the highest number in the 10 randomly generated number
 
 # Import libraries
 # randint allows drawing a random number,
@@ -12,10 +12,10 @@ from math import ceil
 
 progress=0
 stored_random_number=0
-while progress<10:
+while progress<10: # repeat following commands 10 times
 	progress+=1 # progress = progress + 1
-	n = randint(1,100)
-	if n > stored_random_number:
+	n = randint(1,100) # draws a number between 1 and 100
+	if n > stored_random_number: # store the highest number from the 10 numbers drawn
 		stored_random_number = n
 
 print(stored_random_number)

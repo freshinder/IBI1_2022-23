@@ -5,9 +5,14 @@
 #	generation no. increase 
 #	stop repeating until number of rabbits just exceed 100
 
-n=0
-r=2
+n = 0
+# initial number of generation is 0
+r = 2
+# initial number of rabbits is 2
 while r <= 100:
-	n += 1
-	r=2*r
-print(n)
+# repeat the following commands until r (number of rabbits) exceed 100
+    n += 1
+    # n (number of generation) increase by 1 in each loop
+    r = 2 * r
+    # r (number of rabbits) double in each generation
+print("After", n, "generation, over 100 rabbits have been born.")

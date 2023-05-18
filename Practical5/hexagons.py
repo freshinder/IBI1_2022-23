@@ -5,6 +5,7 @@
 #	calculate h using 
 #	print h
 
-for n in range (1,6):
-	h = n*(2*n-1)
-	print(n,":",h)
+for n in range(1, 6):
+    h = n * (2 * n - 1)
+    # h is the nth hexagonal number calculated using the formula given
+    print(n, ":", h)

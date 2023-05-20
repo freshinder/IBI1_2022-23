@@ -9,9 +9,9 @@ import re
 count = 0
 # find the number of 'TGA' stop sequences
 x = re.findall('TGA',seq)
-count = count + len(x)
+count += len(x)
 # find the number of 'TAA' stop sequences
 y = re.findall('TAA',seq)
 # sum the number of stop codons
-count = count + len(y)
+count += len(y)
 print('The total number of possible coding sequences is', count)

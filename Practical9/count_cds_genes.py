@@ -20,8 +20,7 @@ while det == False:
     stop_codon = str(input())
     if stop_codon in L:
         det = True
-    else:
-        det = False
+
 
 # create a dictionary to store the gene name and the corresponding sequence
 # distinguish between gene name and sequence
